@@ -1,0 +1,198 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (min-width:768px) {
+    .container {
+
+        width: 750px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+
+        width: 970px;
+    }
+}
+
+@media (min-width:1700px) {
+    .container {
+
+        width: 1170px;
+    }
+}
+
+.header {
+    background-color: #eee;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header .container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu {
+    position: relative;
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.header .menu ul li a.active {
+    color: #5a5b5a;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #333;
+}
+
+.header .menu ul a:hover {
+    color: #5a5b5a;
+    border-bottom: 1px solid #333;
+    transition: 0.1s;
+}
+
+
+/* #################################################### */
+/* #################################################### */
+/* #################################################### */
+/* #################################################### */
+/* #################################################### */
+/* Mobile --------------------------------------------- */
+@media (max-width:992px) {
+    .header .menu ul {
+        display: none;
+    }
+}
+
+
+.header .menu ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.header .icon-bar {
+    display: none;
+}
+
+@media (max-width:992px) {
+
+    .header .icon-bar {
+        display: block;
+        cursor: pointer;
+        color: #f0eaea;
+
+    }
+
+    .header .menu-list:hover {
+        transition: 0.2s;
+    }
+
+    .header .menu ul {
+        display: none;
+        background-color: #f6f6f6;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: -20px;
+        min-width: 200px;
+        top: calc(100% + 35px);
+        z-index: 1;
+
+    }
+
+    .header .menu ul::before {
+        content: "";
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #f6f6f6 transparent;
+        position: absolute;
+        right: 5px;
+        top: -20px;
+    }
+
+    .header .menu ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #333;
+        transition: 0.3s;
+    }
+
+    .header .menu :not(:last-child) a {
+        border-bottom: 1px solid #f0eaea;
+    }
+
+    .header .menu ul a:hover {
+        padding-left: 25px;
+        z-index: 1;
+        transition: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header .menu ul::after {
+        border: 0;
+    }
+
+
+
+}
+
+/* End Header */
+/* #################################################### */
+/* #################################################### */
+/* #################################################### */
+/* #################################################### */
+/* #################################################### *
+
+
+
+
+
+/* Start Service */
+
+.service article .home-content p:hover {
+    color: #5a5b5a;
+    border-bottom: 1px solid #fffefe;
+    transition: 0.1s;
+}
+
+
+
+
+/* End Service */
